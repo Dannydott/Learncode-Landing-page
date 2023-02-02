@@ -57,7 +57,6 @@ nav a {
 }
 
 .header-item {
-    min-width: 400px;
     width: 60%;
 }
 
@@ -77,11 +76,6 @@ nav a {
     object-fit: cover;
 }
 
-.progress-card img {
-    min-width: 100px;
-    height: 150px;
-    object-fit: cover;
-}
 
 .free-trial-button {
     padding: 10px 25px;
@@ -109,12 +103,19 @@ nav a {
 }
 
 .progress-card {
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
     gap: 10px;
+}
+
+
+.progress-card img {
+    max-width: 200px;
+    height: 150px;
 }
 
 .testimonal-section {
@@ -149,5 +150,29 @@ footer {
 @media screen and (max-width: 800px) {
     .header-container {
         flex-direction: column;
+    }
+
+    .header-item {
+        width: 100%;
+    }
+
+    .main-progress-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .sign-up-text {
+        flex-direction: column;
+    }
+
+    .text-class {
+        margin-bottom: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 25px;
     }
 }
